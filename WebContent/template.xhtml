@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+ <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  <!-- a. ページごとに定義するページ・タイトル -->
+ <title>
+ 	<ui:insert name="title">JFS Template</ui:insert>
+  </title>
+ </head>  <body>
+ <!-- b. 全ページで共通のページ・ヘッダー -->
+ <div id="header" style="background-color:#F00; color:#FFF">
+     <h1> 数字当てゲーム </h1>
+ </div>
+ 	<!-- c. 各ページで異なるコンテンツを表示する領域 -->
+ 	<ui:insert name="content">ページごとのコンテンツ</ui:insert>
+ </body></html>

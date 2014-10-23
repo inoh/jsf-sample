@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="template.xhtml">
+	<ui:define name="title">数字当てゲーム</ui:define>
+	<ui:define name="content">
+	<h:form>
+		<div>
+			<h:outputFormat value="{0}さん、{1}">
+				<f:param value="#{userBean.name}"/>
+				<f:param value="3つの異なる数字を入力してください"/>
+			</h:outputFormat>
+		</div>
+		<div>
+			<h:inputText size="2" maxlength="1"/>
+			<h:inputText size="2" maxlength="1"/>
+			<h:inputText size="2" maxlength="1"/>
+			<h:commandButton value="やり直す"/>
+		</div>
+		<h2>回答履歴</h2>
+	</h:form>
+	</ui:define>
+</ui:composition>
+</html>
